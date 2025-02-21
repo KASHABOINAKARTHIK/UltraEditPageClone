@@ -1,0 +1,174 @@
+/* for main */
+    /* this is for main body */
+.first-part {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 77px;
+    font-family: sans-serif;
+
+}
+
+.first-part span {
+    font-size: 36px;
+}
+
+.first-part button {
+    width: fit-content;
+    height: fit-content;
+    padding: 17px 21px;
+    font-size: 20px;
+    background-color: #00b6d1;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin-top: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.first-part-second-line {
+    font-size: 23px;
+    width: 70vw;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.second-part img {
+    width: 70px;
+    height: 70px;
+}
+
+.second-part {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    margin-left: 170px;
+    gap: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.second-part small {
+    color: rgb(57, 56, 56);
+    font-size: small;
+}
+
+.third-part {
+    /* border: 2px solid black; */
+
+    width: 80vw;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    word-wrap: wrap;
+    margin: auto;
+    font-family: sans-serif;
+
+}
+
+.card {
+    /* border: 1px solid black; */
+    background-color: #ece9e9;
+    text-align: center;
+    padding: 8px 20px;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.card button {
+    width: fit-content;
+    font-size: 20px;
+    color: white;
+    background: #5cb85c;
+    font-weight: bolder;
+    border: none;
+    height: fit-content;
+    margin: 20px auto;
+    padding: 16px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    display: grid;
+}
+
+.card p {
+    font-size: 12px;
+}
+
+.card .Downloadcode {
+    font-size: 15px;
+}
+
+.card h3 {
+    font-size: 25px;
+}
+
+.card h4 {
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+@media screen and (max-width:766px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .third-part {
+        width: 100%;
+        /* align-items: center; */
+        justify-content: center;
+        display: flex;
+    }
+}
+
+/* for navBar */
+/* this is for nav bar */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo img {
+    width: 250px;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.lang-logo {
+    margin-left: 0;
+}
+
+ul li {
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+}

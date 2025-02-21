@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraEdit WebPage Clone</title>
+    <link rel="stylesheet" href="ultraEditPageClone.css">
+    <style>
+        /* this is for nav bar */
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .logo img {
+            width: 250px;
+
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+
+
+        }
+
+        .lang-logo {
+            margin-left: 0;
+        }
+
+        ul li {
+            align-self: center;
+            justify-content: center;
+            display: flex;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        /* this is for main content*/
+        .first-part {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin: 77px;
+            font-family: sans-serif;
+
+        }
+
+        .first-part span {
+            font-size: 36px;
+        }
+
+        .first-part button {
+            width: fit-content;
+            height: fit-content;
+            padding: 17px 21px;
+            font-size: 20px;
+            background-color: #00b6d1;
+            border: none;
+            color: white;
+            font-weight: bolder;
+            text-transform: uppercase;
+            border-radius: 8px;
+            margin-top: 0px;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        .first-part-second-line {
+            font-size: 23px;
+            width: 70vw;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+        .second-part img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .second-part {
+            align-items: center;
+            justify-content: flex-start;
+            display: flex;
+            margin-left: 170px;
+            gap: 20px;
+            font-size: 20px;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .second-part small {
+            color: rgb(57, 56, 56);
+            font-size: small;
+        }
+
+        .third-part {
+            /* border: 2px solid black; */
+
+            width: 80vw;
+            height: 100vh;
+            align-content: center;
+            justify-content: center;
+            display: flex;
+            word-wrap: wrap;
+            margin: auto;
+            font-family: sans-serif;
+
+        }
+
+        .card {
+            /* border: 1px solid black; */
+            background-color: #ece9e9;
+            text-align: center;
+            padding: 8px 20px;
+            height: fit-content;
+            border-radius: 5px;
+        }
+
+        .card button {
+            width: fit-content;
+            font-size: 20px;
+            color: white;
+            background: #5cb85c;
+            font-weight: bolder;
+            border: none;
+            height: fit-content;
+            margin: 20px auto;
+            padding: 16px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .grid {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            display: grid;
+        }
+
+        .card p {
+            font-size: 12px;
+        }
+
+        .card .Downloadcode {
+            font-size: 15px;
+        }
+
+        .card h3 {
+            font-size: 25px;
+        }
+
+        .card h4 {
+            font-size: 18px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            font-weight: normal;
+        }
+
+        @media screen and (max-width:766px) {
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .third-part {
+                width: 100%;
+                /* align-items: center; */
+                justify-content: center;
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://www.ultraedit.com/downloads/ultraedit-download-thank-you/  -->
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.btsoftware.com/images/ue.png" alt="">
+            </div>
+            <ul>
+                <li><span>Products</span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                        viewBox="0 0 24 24" fill="none">
+                        <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></li>
+                <li><span>For Business</span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                        viewBox="0 0 24 24" fill="none">
+                        <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></li>
+                <li><span>Resources</span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                        viewBox="0 0 24 24" fill="none">
+                        <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></li>
+                <li><span>Support</span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                        viewBox="0 0 24 24" fill="none">
+                        <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></li>
+                <li><span>Out Company</span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                        viewBox="0 0 24 24" fill="none">
+                        <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></li>
+                <li>
+                    <div class="lang-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px"
+                            height="35px" viewBox="0 0 512 512" version="1.1">
+                            <title>language-filled</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="icon" fill="#000000" transform="translate(42.666667, 85.333333)">
+                                    <path
+                                        d="M426.666667,85.3333333 L426.666667,341.333333 L362.626302,341.333333 L362.666667,405.333333 L256,341.333333 L170.666667,341.333333 L170.666667,85.3333333 L426.666667,85.3333333 Z M256,1.42108547e-14 L256,64 L149.333333,64 L149.333,268.8 L64,320 L64.0403648,256 L6.39488462e-14,256 L6.39488462e-14,1.42108547e-14 L256,1.42108547e-14 Z M311.198683,149.333333 L286.267137,149.333333 L238.933333,277.333333 L261.425923,277.333333 L274.524018,240.658669 L322.580475,240.658669 L335.768901,277.333333 L359.616467,277.333333 L311.198683,149.333333 Z M298.552247,170.741943 C300.501905,177.275935 302.566831,183.717713 304.747024,190.067278 L305.68845,192.782875 L316.43792,223.134321 L280.576241,223.134321 L291.325712,192.782875 C294.336768,184.412138 296.745613,177.065161 298.552247,170.741943 Z M117.030949,34.5391157 L95.6976158,34.5391157 L95.6973576,45.2051157 L42.3642825,45.2057824 L42.3642825,66.5391157 L121.995716,66.5400848 C120.716368,84.7084858 116.106956,101.073346 108.17419,115.733999 C99.560792,103.887475 93.627247,90.6461433 90.3372583,75.9278184 L90.1264414,74.9658328 L69.2687902,79.445732 L70.8337641,85.9582885 C75.5835399,103.786573 83.778254,119.851708 95.3786478,134.061926 C82.7968575,147.638694 64.7668657,157.161751 40.9572973,162.588992 L40.0503576,162.79312 L44.6782074,183.618444 L51.0461873,182.085779 C75.8970327,175.630085 95.7303277,164.729984 110.29054,149.351848 C120.495309,158.153416 133.141117,166.473384 148.224582,174.354521 L149.332601,174.930407 L149.332449,150.637452 C139.011433,144.692193 130.308211,138.579415 123.22105,132.322953 C134.984339,113.206613 141.674551,91.5943352 143.304052,67.6309686 L143.374635,66.540106 L149.332358,66.5391157 L149.332358,45.2051157 L117.030358,45.2051157 L117.030949,34.5391157 Z"
+                                        id="Combined-Shape">
+
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="searchLogo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24"
+                            fill="none">
+                            <g clip-path="url(#clip0_15_152)">
+                                <rect width="24" height="24" fill="white" />
+                                <circle cx="10.5" cy="10.5" r="6.5" stroke="#000000" stroke-linejoin="round" />
+                                <path
+                                    d="M19.6464 20.3536C19.8417 20.5488 20.1583 20.5488 20.3536 20.3536C20.5488 20.1583 20.5488 19.8417 20.3536 19.6464L19.6464 20.3536ZM20.3536 19.6464L15.3536 14.6464L14.6464 15.3536L19.6464 20.3536L20.3536 19.6464Z"
+                                    fill="#000000" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_15_152">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="first-part">
+            <div><span>Download <b>UltraEdit</b> for Windows Reviews <img
+                        src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="" width="112px"
+                        height="32px"></div> </span>
+            <p class="first-part-second-line">Download and try UltraEdit before you buy it! This download includes the
+                full Windows version of the text editor.</p>
+            <div>
+                <button>
+                    Download Mac or Linux version
+                </button>
+            </div>
+        </section>
+
+
+        <section class="second-part">
+            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_white.png" alt=""><span>
+                Download UltraEdit <small> v2024.3 (released 2025-02-20) | Hotfix information </small>
+            </span>
+        </section>
+
+        <section class="third-part">
+            <div class="grid">
+                <div class="card">
+                    <h3>English</h3>
+                    <h4>&nbsp;</h4>
+                    <a href="ue_english_64.exe"><button>Download 64-bit</button></a>
+                    <div class="Downloadcode">SHA256</div>
+                    <p>72508D9E522A88892931563BFFFFEBDBA160DBC4D11D75CB29B34</p>
+                    <p>1DCE9D04302</p>
+                </div>
+
+                <div class="card">
+                    <h3>Deutsch</h3>
+                    <h4>German</h4>
+                    <a href="ue_english_64.exe"><button>Download 64-bit</button></a>
+                    <div class="Downloadcode">SHA256</div>
+                    <p>72508D9E522A88892931563BFFFFEBDBA160DBC4D11D75CB29B34</p>
+                    <p>1DCE9D04302</p>
+                </div>
+
+                <div class="card">
+                    <h3>Italiano</h3>
+                    <h4>Italian</h4>
+                    <a href="ue_english_64.exe"><button>Download 64-bit</button></a>
+                    <div class="Downloadcode">SHA256</div>
+                    <p>72508D9E522A88892931563BFFFFEBDBA160DBC4D11D75CB29B34</p>
+                    <p>1DCE9D04302</p>
+                </div>
+
+                <div class="card">
+                    <h3>Español</h3>
+                    <h4>Spanish</h4>
+                    <a href="ue_english_64.exe"><button>Download 64-bit</button></a>
+                    <div class="Downloadcode">SHA256</div>
+                    <p>72508D9E522A88892931563BFFFFEBDBA160DBC4D11D75CB29B34</p>
+                    <p>1DCE9D04302</p>
+                </div>
+
+                <div class="card">
+                    <h3>français</h3>
+                    <h4>French</h4>
+                    <a href="ue_english_64.exe"><button>Download 64-bit</button></a>
+                    <div class="Downloadcode">SHA256</div>
+                    <p>72508D9E522A88892931563BFFFFEBDBA160DBC4D11D75CB29B34</p>
+                    <p>1DCE9D04302</p>
+                </div>
+
+                <div class="card">
+                    <h3>Português brasileiro</h3>
+                    <h4>Brazilian Portuguese</h4>
+                    <a href="ue_english_64.exe"><button>Download 64-bit</button></a>
+                    <div class="Downloadcode">SHA256</div>
+                    <p>72508D9E522A88892931563BFFFFEBDBA160DBC4D11D75CB29B34</p>
+                    <p>1DCE9D04302</p>
+                </div>
+
+                <div class="card">
+                    <h3>日本</h3>
+                    <h4>Japanese</h4>
+                    <a href="ue_english_64.exe"><button>Download 64-bit</button></a>
+                    <div class="Downloadcode">SHA256</div>
+                    <p>72508D9E522A88892931563BFFFFEBDBA160DBC4D11D75CB29B34</p>
+                    <p>1DCE9D04302</p>
+                </div>
+                <div class="card">
+                    <h3>한국어</h3>
+                    <h4>Korean</h4>
+                    <a href="ue_english_64.exe"><button>Download 64-bit</button></a>
+                    <div class="Downloadcode">SHA256</div>
+                    <p>72508D9E522A88892931563BFFFFEBDBA160DBC4D11D75CB29B34</p>
+                    <p>1DCE9D04302</p>
+                </div>
+                <div class="card">
+                    <h3>华语</h3>
+                    <h4>Chinese</h4>
+                    <a href="ue_english_64.exe"><button>Download 64-bit</button></a>
+                    <div class="Downloadcode">SHA256</div>
+                    <p>72508D9E522A88892931563BFFFFEBDBA160DBC4D11D75CB29B34</p>
+                    <p>1DCE9D04302</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
